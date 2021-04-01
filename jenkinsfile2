@@ -3,6 +3,8 @@ node{
     stage('SCM Checkout')
     {
         bat 'echo $JAVA_HOME'
+        bat 'docker-compose build'
+        bat 'docker-compose up -d'
     }
 
 }
