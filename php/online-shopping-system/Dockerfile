@@ -1,5 +1,5 @@
 #FROM php:7.3.3-apache
-FROM tutum/apache-php
+FROM webdevops/php-apache
 RUN apt-get update && apt-get upgrade -y
 RUN docker-php-ext-install mysqli
 EXPOSE 80
